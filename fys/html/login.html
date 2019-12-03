@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MultiMedia</title>
+  </head>
+  <body>
+
+
+
+        <div class="body"></div>
+      		<div class="grad"></div>
+      		<div class="header">
+      			<div>Login</span></div>
+      		</div>
+      		<br>
+      		<form name="login">
+      		<div class="login">
+      				<input type="text" placeholder="Username" name="userid"><br>
+      				<input type="password" placeholder="password" name="pswrd"><br>
+      				<input type="button" onclick="check(this.form)" value="Login"/>
+      		</div>
+
+
+
+      </form>
+      <script language="javascript">
+      function check(form)
+      {
+
+       if(form.userid.value == "Jur" && form.pswrd.value == "123")
+        {
+          window.open('formrecieved.html')
+        }
+       else
+       {
+         alert("Try again")
+        }
+      }
+
+    
+      </script>
+      </body>
+      </html>
