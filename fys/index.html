@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>login</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function CheckPassword() {
+            var username = document.login.username.value;
+            var password = document.login.password.value;
+            if (username == "Jur" && password == "123") {
+                return location.href = "calc.html";
+
+            }
+            alert("Try again!")
+            return false;
+        }
+    </script>
+    <form method="post" onsubmit="CheckPassword();return false;" name="login">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" name="username">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" name="password">
+        <button type="submit" class="button_login">Login</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>SECRET CALCULATOR!</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function calculate(operator) {
+            var number1 = document.getElementById('number1').value
+            var number2 = document.getElementById('number2').value
+            answer = eval(number1 + operator + number2)
+            document.getElementById("output_calculator").innerHTML = answer;
+
+        }
+    </script>
+    <input type="text" name="number1" class="number1" id="number1" placeholder="Number 1">
+    <input type="text" name="number2" class="number2" id="number2" placeholder="Number 2">
+    <input type=class="operator" class="operator" onclick="calculate('+')" value="+">
+    <input type=class="operator" class="operator" onclick="calculate('-')" value="-">
+    <input type=class="operator" class="operator" onclick="calculate('*')" value="x">
+    <input type=class="operator" class="operator" onclick="calculate('/')" value="/">
+    <div id="output_calculator" class="output_calculator"></div>
+</body>
+
+</html>
