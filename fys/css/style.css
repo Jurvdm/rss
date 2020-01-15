@@ -1,10 +1,12 @@
 /* Bordered form */
+
 form {
     border: 3px solid #f1f1f1;
 }
 
 
 /* Full-width inputs */
+
 input[type=text],
 input[type=password] {
     width: 100%;
@@ -28,7 +30,6 @@ input[type=password] {
 
 td {
     height: 50px;
-
 }
 
 .calculator_output {
@@ -53,7 +54,9 @@ operator:hover {
     opacity: 0.8;
 }
 
+
 /* Set a style for all buttons */
+
 .button_login {
     background-color: #4CAF50;
     color: white;
@@ -64,10 +67,163 @@ operator:hover {
     width: 100%;
 }
 
+
 /* Add a hover effect for buttons */
+
 button:hover {
     opacity: 0.8;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+fieldset {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 20%;
+}
+
+img {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.formSubmit {
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+body {
+    background-color: grey;
+}
+
 * {
-	cursor: none !important;
+    box-sizing: border-box;
+}
+
+.header {
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 255px);
+}
+
+.header div {
+    float: left;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.header div span {
+    color: #F29E20 !important;
+}
+
+.login {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+}
+
+.login input[type=text] {
+    width: 250px;
+    height: 30px;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.login input[type=password] {
+    width: 250px;
+    height: 30px;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.login input[type=button] {
+    width: 260px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.login input[type=button]:hover {
+    opacity: 0.8;
+}
+
+.login input[type=button]:active {
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=password]:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=button]:focus {
+    outline: none;
+}
+
+ ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+ ::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
